@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <style>
+            .operand{
+                color:black;
+                background-color: aquamarine;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .operator{
+                color:black;
+                background-color: yellow;
+                font-weight: bold;
+            }
+            .operator:hover{
+                background-color: gold;
+            }
+            .operand:hover{
+                background-color: lightblue;
+            }
+            .roundness{
+                display: inline-block;
+                padding: 15px 25px; /* Adjust padding according to your design */
+                font-size: 16px;  /* Adjust font size according to your design */
+                border: none;
+                border-radius: 30px; /* Make it round *//* Text color */
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                margin: 15px;
+            }
+            .rect1{
+                width: 600px;
+                height: 600px;
+                position: absolute;
+                background-color: black;
+                right: 400px;
+                top: 100px;
+                padding:20px;
+            }
+            .rect2{
+                width:800px;
+                height:800px;
+                position:absolute;
+                background-color: blanchedalmond;
+                right: 300px;
+            }
+            .specialbutton{
+                border-radius: 20px;
+                padding: 15px 30px;
+                color:black;
+                text-align: center;
+                font-weight: bold;
+                margin: 10px;
+            }
+            .lastrow{
+                display:inline-block;
+                border-radius: 30px;
+                border:none;
+                text-align: center;
+                cursor: pointer;
+                padding: 15px 25px;
+                margin: 15px;
+            }
+            .specialbutton{
+                display:inline-block;
+                border-radius: 20px;
+                border:none;
+                padding:20px 100px;
+                margin: 10px;
+            }
+            h2,body{
+                margin: 0;
+            }
+            #operator{
+                margin-right: 0px;
+            }
+            table{
+                width:40%;
+            }
+            td{
+                width:10%;
+            }
+        </style>
+    </head>
+    <body>
+        <center><section class="rect2"><h1><strong>Calculator</strong></h1></section></center>
+        <center>
+        <table class="rect1">
+            <tr>
+                <pre><td colspan="4" style="text-align: center; font-size: 24px; color:white; margin-left:80px">21</td></pre>
+                <hr style="border: 2px border whitesmoke">
+            </tr>
+            <tr>
+                <td style="color:red; background-color: aquamarine;" class="roundness" width=>C</td>
+                <td class="operator roundness">( )</td>
+                <td class="operator roundness">%</td>
+                <td class="operator roundness">/</td>
+            </tr>
+            <tr>
+                <td class="operand roundness">7</td>
+                <td class="operand roundness">8</td>
+                <td class="operand roundness">9</td>
+                <td class="operator roundness" id="operator">*</td>
+            </tr>
+            <tr>
+                <td class="operand roundness">4</td>
+                <td class="operand roundness">5</td>
+                <td class="operand roundness">6</td>
+                <td class="operator roundness" id="operator">-</td>
+            </tr>
+            <tr>
+                <td class="operand roundness">1</td>
+                <td class="operand roundness">2</td>
+                <td class="operand roundness">3</td>
+                <td class="operator roundness" id="operator">+</td>
+            </tr>
+            <tr>
+                <td class="operand specialbutton">0</td>
+                <td class="operand lastrow">.</td>
+                <td class="operator lastrow" id="operator">=</td>
+            </tr>
+        </table>
+        </center>
+    </body>
+</html>
